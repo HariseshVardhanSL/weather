@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Weather Dashboard</title>
+    <link rel="stylesheet" href="w2.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Weather in Your Location 🌎</h2>
+        <button onclick="getLocation()">📍 Get My Weather</button>
+        <p id="loading" style="display:none;">Fetching weather details... ⏳</p>
+
+        <div id="weatherDisplay" style="display: none;">
+            <h3 id="cityName"></h3>
+            <img id="weatherIcon" src="" alt="">
+            <p id="temperature"></p>
+            <p id="feelsLike"></p>
+            <p id="tempRange"></p>
+            <p id="condition"></p>
+            <p id="humidity"></p>
+            <p id="wind"></p>
+            <p id="sunrise"></p>
+            <p id="sunset"></p>
+        </div>
+    </div>
+
+    <script src="w3.js"></script>
+</body>
+</html>
